@@ -1,0 +1,7 @@
+/target
+**/*.rs.bk
+.DS_Store
+avs/pkg/*
+avs/*.wat
+site/static/node_modules/*
+dist/
