@@ -1,0 +1,98 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.font-heading {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.font-body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.fg-red {
+    color: #FF5959;
+    color: #E74C3C;
+}
+
+.fg-yellow {
+    color: #FFD900;
+}
+
+.fg-orange {
+    color: #ff8800;
+}
+
+.fg-purple {
+    color: #420098;
+}
+
+.fg-blue {
+    color: #0091ff;
+}
+
+.bg-purple {
+    /* background-color: #420098; */
+
+    background-color: #2F0922;
+    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.bg-red {
+    background-color: #FF5959;
+}
+
+.bg-light-red {
+    background-color: #FFEFED;
+}
+
+
+.bg-yellow {
+    /* background-color: #FFFFD9; */
+    background-color: rgba(255, 255, 217, 0.35);
+}
+
+
+.bg-black {
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+}
+
+.bg-black-purple {
+    background-color: rgba(0, 0, 0, 0.95);
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(66, 0, 152, 1));
+    color: white;
+}
+
+.bg-fade-out {
+    background-color: rgba(255, 239, 237, 0.6);
+    /* background: linear-gradient(rgba(255, 255, 217, 0.35), rgba(255, 239, 237, 0.6)); */
+    background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 239, 237, 0.6));
+}
+
+.bg-fade-in {
+    background: linear-gradient(#FFF, rgba(255, 255, 217, 0.35));
+}
+
+.bg-light-purple {
+    /* background-color: #908799; */
+    /* background-color: rgba(66, 0, 152, 0.15); */
+
+}
+
+.bg-grey {
+    background-color: #f6f9fc;
+}
+
+.fg-white {
+    color: white
+}
