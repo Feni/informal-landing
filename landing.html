@@ -42,7 +42,7 @@
               Elevate your code to the next level.</h1>
              <br>
             <h2 class="text-xl max-w-md inline-block font-body">
-              Arevel is a next generation, high level programming language for web applications and data science.
+              Arevel is a high level, pattern-based programming language for web applications and data science.
             </h2>
         </div>
     </section>
@@ -60,7 +60,7 @@
             <div class="p-5">
               <h3 class="text-white text-lg">Declarative</h3>
               <p class="text-gray-400">
-                Use logic, functional, object oriented or array programming styles to adapt to your problem domain.
+                Adapt to your problem domain with declarative patterns that express logic, functions and objects.
               </p>
             </div>
           </div>
@@ -107,7 +107,9 @@
             Focus on what matters.
           </h2>
           <p class="text-lg">
-            
+            Distill your programs to their essence and solve the problems you care about. Let the language take care of the details.
+            Arevel automatically manages your application memory, distributes concurrent tasks across cores, infers type signatures 
+            and even solves whole classes of logic and constraint problems for you.
           
           </p>
 
@@ -116,69 +118,46 @@
 
 
 
-      <!--
-      <div>
-        <div class="tabs">
-          <div class="tab">
-              <input type="radio" id="tab-1" name="tab-group-1" checked>
-              <label for="tab-1">Tab One</label>
-              
-              <div class="content">
-                  stuff
-              </div> 
+
+      <div class="tabs bg-purple">
+
+        <input type="radio" id="tab-1" name="tab-group-1" checked>
+        <input type="radio" id="tab-2" name="tab-group-1">
+        <input type="radio" id="tab-3" name="tab-group-1">
+
+        <div class="tab-navs">
+          <label onclick="selectTab" id="label-1" class="tab-nav active" for="tab-1">Pattern based functions and objects</label>
+          <label onclick="selectTab" id="label-2" class="tab-nav" for="tab-2">Declarative logic programming</label>
+          <label onclick="selectTab" id="label-3" class="tab-nav" for="tab-3">Seamless concurrency with actors and effects</label>
+        </div>
+
+        
+        <div id="content-1" class="tab-content">
+          <div class="window-border">
+            <img src="/static/images/windows.svg" alt="Window border">
           </div>
-           
-          <div class="tab">
-              <input type="radio" id="tab-2" name="tab-group-1">
-              <label for="tab-2">Tab Two</label>
-              
-              <div class="content">
-                  stuff
-              </div> 
-          </div>
-           
-           <div class="tab">
-              <input type="radio" id="tab-3" name="tab-group-1">
-              <label for="tab-3">Tab Three</label>
-            
-              <div class="content">
-                  stuff
-              </div> 
-          </div>
-           
-       </div>
-      
+          
+          
+        </div>
+
+        <div id="content-2" class="tab-content">
+          <h3>Declarative logic programming</h3>
+          
+        </div>
+
+        <div id="content-3" class="tab-content">
+          <h3>Seamless concurrency with actors and effects</h3>
+          
+        </div>
       </div>
-    -->
-
-    <!-- <div class="max-w-6xl relative mx-auto px-16 py-32"> -->
-
-
-
-
-
-  <!-- code end -->
-
-
-
-<!--       
-    <div class="bg-purple">
-      <section class="max-w-6xl relative mx-auto px-16 pt-32 pb-32">
-          <h2 class="text-4xl font-heading font-bold">
-            HTOP Graphics
-          </h2>
-      </section>
-    </div> -->
-
-      <!-- HTOP graphics -->
+            
       
       
       <section class="max-w-6xl relative mx-auto px-16 pt-32 pb-32 md:pb-24">
-        <!-- Section on concurrency. Safety + Performance. -->
-        <!-- For a concurrent future. The future is concurrent. Are you ready for the next frontier?-->
         <h2 class="text-4xl font-heading font-bold fg-purple">Designed to evolve with you.</h2>
         <p class="text-lg">
           From prototype to production, Arevel adapts to the ever-changing requirements of a growing project. 
+          Add contractual guarantees to your program with gradual types, isolate complex functionality with independent modules or even transform the language itself with macros.
         </p>
       </section>
       
@@ -222,6 +201,13 @@
         </section>
           </div>
 
+
+        <script>
+          function selectTab(element) {
+            console.log("Select tab called");
+          }
+
+        </script>
 
   </body>
 </html>
