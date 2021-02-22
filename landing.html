@@ -11,7 +11,6 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap" rel="stylesheet"> 
@@ -24,6 +23,13 @@
       
   </head>
   <body class="leading-tight">
+
+    <!--
+      Hello, curious hackers!
+      If you're reading this, I assume you want to know more about how this website is built.
+      It's mostly handwritten HTML with no JS frameworks. The CSS is built on top of tailwind utility classes.
+      Fonts are Libre Franklin for that clean, modern sans look and IBM Plex Sans for a bit of retro flair.
+    -->
     <header>
       <nav role="navigation" class="flex bg-white items-center flex-wrap p-6 justify-between">
 
@@ -48,6 +54,9 @@
     </section>
 
 
+    <!-- 
+      The symbols here are a reference to the curry-howard-lambek correspondence.
+    -->
       <section class="max-w-6xl relative mx-auto px-16 pt-32 pb-32 bg-fade-in">
         <section class="grid grid-cols-1 md:grid-cols-3 gap-4 showcase">
 
@@ -99,10 +108,6 @@
       
       
       <section class="max-w-6xl relative mx-auto px-16 pt-32 pb-32 bg-yellow">
-
-        <!-- On Complexity. Productivity. Safety. -->
-        <!-- Build things that matter. Write code you love. Good code matters. Write code that matters.-->
-        <!-- On incidental complexity and focusing on the things that matter to you.-->
           <h2 class="text-4xl font-heading font-bold">
             Focus on what matters.
           </h2>
@@ -112,11 +117,14 @@
             and even solves whole classes of logic and constraint problems for you.
           
           </p>
-
-          <!-- Examples you can click through -->
       </section>
 
 
+      <!-- 
+        JS-free radio-button based tabs. 
+        Code-sections were written in a highlighter, and extracted as 
+        HTML so we don't need to ship a whole editor for the landing page.
+      -->
       <section class="tabs bg-purple shadow-lg md:rounded-r fg-white max-w-6xl">
 
         <input type="radio" id="tab-1" name="tab-group-1" checked>
@@ -218,55 +226,61 @@
             Software is a collaborative medium. Arevel gives you the tools to create great software together across the internet.
             </p>
         </section>
+
+
+
+
+
+        <div class="max-w-6xl mx-auto rounded-lg shadow-lg">
+
+  
+          <section class="tabs bg-white">
+  
+            <input type="radio" id="tab-7" name="tab-group-3" checked>
+            <input type="radio" id="tab-8" name="tab-group-3">
+            <input type="radio" id="tab-9" name="tab-group-3">
+  
+            <div class="tab-navs bg-gradient-to-bl from-gray-100 to-white">
+              <label onclick="selectTab(this);" class="tab-nav active" for="tab-7">
+                Pattern based functions and objects
+              </label>
+              <label onclick="selectTab(this);" class="tab-nav" for="tab-8">
+                Declarative logic programming
+              </label>
+              <label onclick="selectTab(this);" class="tab-nav" for="tab-9">
+                Seamless concurrency with actors
+              </label>
+            </div>
+            
+            <div id="content-7" class="tab-content">
+              <div class="window-border">
+                <img src="/static/images/windows.svg" alt="Window border">
+              </div>
+            </div>
+  
+            <div id="content-8" class="tab-content">
+              <div class="window-border">
+                <img src="/static/images/windows.svg" alt="Window border">
+              </div>
+              
+            </div>
+  
+            <div id="content-9" class="tab-content">
+              <div class="window-border">
+                <img src="/static/images/windows.svg" alt="Window border">
+              </div>
+              
+            </div>
+  
+        </section>
+  
       </div>
 
 
 
-      <div class="p-3 mx-auto">
 
-  
-      <section class="tabs bg-white">
 
-        <input type="radio" id="tab-7" name="tab-group-3" checked>
-        <input type="radio" id="tab-8" name="tab-group-3">
-        <input type="radio" id="tab-9" name="tab-group-3">
-
-        <div class="tab-navs bg-gradient-to-bl from-gray-100 to-white">
-          <label onclick="selectTab(this);" class="tab-nav active" for="tab-7">
-            Pattern based functions and objects
-          </label>
-          <label onclick="selectTab(this);" class="tab-nav" for="tab-8">
-            Declarative logic programming
-          </label>
-          <label onclick="selectTab(this);" class="tab-nav" for="tab-9">
-            Seamless concurrency with actors
-          </label>
-        </div>
-        
-        <div id="content-7" class="tab-content">
-          <div class="window-border">
-            <img src="/static/images/windows.svg" alt="Window border">
-          </div>
-        </div>
-
-        <div id="content-8" class="tab-content">
-          <div class="window-border">
-            <img src="/static/images/windows.svg" alt="Window border">
-          </div>
-          
-        </div>
-
-        <div id="content-9" class="tab-content">
-          <div class="window-border">
-            <img src="/static/images/windows.svg" alt="Window border">
-          </div>
-          
-        </div>
-
-      </section>
-
-    </div>
-
+      </div>
 
 
 
@@ -276,24 +290,24 @@
             <h2 class="text-2xl font-heading font-bold text-center">
               Build. Launch. Grow.
             </h2>
-            <!-- CTA-->
             <p class="text-lg">
             
             </p>
         </section>
-          </div>
+      </div>
 
 
         <script>
-          // Some old-school style tab selection. The tab-content-switching is setup to work without JS.
+          // Some old-school style class toggling to highlight currently selected tab.
+          // The tab-content-switching is setup to work without JS.
           function selectTab(evt) {
             let tabs = evt.parentNode.getElementsByClassName("tab-nav");
             // Disable previously active tab in this group and activate clicked tab.
             for(var i = 0; i < tabs.length; i++) {  tabs[i].classList.remove("active"); }
             evt.classList.add("active");
           }
-
         </script>
 
+        <!-- Built with <3 by Feni -->
   </body>
 </html>
