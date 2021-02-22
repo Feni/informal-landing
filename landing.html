@@ -117,18 +117,22 @@
       </section>
 
 
-
-
-      <div class="tabs bg-purple">
+      <section class="tabs bg-purple shadow-lg md:rounded-r fg-white max-w-6xl">
 
         <input type="radio" id="tab-1" name="tab-group-1" checked>
         <input type="radio" id="tab-2" name="tab-group-1">
         <input type="radio" id="tab-3" name="tab-group-1">
 
-        <div class="tab-navs">
-          <label onclick="selectTab" id="label-1" class="tab-nav active" for="tab-1">Pattern based functions and objects</label>
-          <label onclick="selectTab" id="label-2" class="tab-nav" for="tab-2">Declarative logic programming</label>
-          <label onclick="selectTab" id="label-3" class="tab-nav" for="tab-3">Seamless concurrency with actors and effects</label>
+        <div class="tab-navs bg-gradient-to-bl from-purple-900 via-pink-800 to-red-500">
+          <label onclick="selectTab(this);" class="tab-nav active" for="tab-1">
+            Pattern based functions and objects
+          </label>
+          <label onclick="selectTab(this);" class="tab-nav" for="tab-2">
+            Declarative logic programming
+          </label>
+          <label onclick="selectTab(this);" class="tab-nav" for="tab-3">
+            Seamless concurrency with actors
+          </label>
         </div>
 
         
@@ -137,20 +141,22 @@
             <img src="/static/images/windows.svg" alt="Window border">
           </div>
           
-          
         </div>
 
         <div id="content-2" class="tab-content">
-          <h3>Declarative logic programming</h3>
+          <div class="window-border">
+            <img src="/static/images/windows.svg" alt="Window border">
+          </div>
           
         </div>
 
         <div id="content-3" class="tab-content">
-          <h3>Seamless concurrency with actors and effects</h3>
+          <div class="window-border">
+            <img src="/static/images/windows.svg" alt="Window border">
+          </div>
           
         </div>
-      </div>
-            
+      </section>
       
       
       <section class="max-w-6xl relative mx-auto px-16 pt-32 pb-32 md:pb-24">
@@ -161,32 +167,108 @@
         </p>
       </section>
       
+      <section class="tabs bg-yellow shadow-lg md:rounded-l max-w-6xl margin-left">
+        <input type="radio" id="tab-4" name="tab-group-2" checked>
+        <input type="radio" id="tab-5" name="tab-group-2">
+        <input type="radio" id="tab-6" name="tab-group-2">
 
+        <div class="tab-navs bg-gradient-to-br from-red-300 via-orange-200 to-yellow-200 ">
+          <label onclick="selectTab(this);" class="tab-nav active" for="tab-4">
+            Pattern based functions and objects
+          </label>
+          <label onclick="selectTab(this);" class="tab-nav" for="tab-5">
+            Declarative logic programming
+          </label>
+          <label onclick="selectTab(this);" class="tab-nav" for="tab-6">
+            Seamless concurrency with actors
+          </label>
+        </div>
 
+        
+        <div id="content-4" class="tab-content">
+          <div class="window-border">
+            <img src="/static/images/windows.svg" alt="Window border">
+          </div>
+        </div>
 
-
-      <div class="bg-gray-900 shadow-lg rounded p-3">
-        <div class="group relative fg-white float-right">
-          <h1 class="text-5xl font-body">Code Examples</h1>
+        <div id="content-5" class="tab-content">
+          <div class="window-border">
+            <img src="/static/images/windows.svg" alt="Window border">
+          </div>
           
         </div>
-        <div class="p-5">
-          <h3 class="text-white text-lg">Functional + Object Oriented</h3>
-          <p class="text-gray-400">Desc</p>
+
+        <div id="content-6" class="tab-content">
+          <div class="window-border">
+            <img src="/static/images/windows.svg" alt="Window border">
+          </div>
+          
         </div>
-      </div>          
+      </section>
+
+
 
 
       <div class="bg-fade-out">
-    <section class="max-w-6xl relative mx-auto px-16 pt-32 pb-32 ">
-        <h2 class="text-4xl font-heading font-bold fg-red">
-          Let's build it together.
-        </h2>
-        <p class="text-lg">
-        Software is a collaborative medium. Arevel gives you the tools to create great software together across the internet.
-        </p>
-    </section>
+        <section class="max-w-6xl relative mx-auto px-16 pt-32 pb-32 ">
+            <h2 class="text-4xl font-heading font-bold fg-red">
+              Let's build it together.
+            </h2>
+            <p class="text-lg">
+            Software is a collaborative medium. Arevel gives you the tools to create great software together across the internet.
+            </p>
+        </section>
       </div>
+
+
+
+      <div class="p-3 mx-auto">
+
+  
+      <section class="tabs bg-white">
+
+        <input type="radio" id="tab-7" name="tab-group-3" checked>
+        <input type="radio" id="tab-8" name="tab-group-3">
+        <input type="radio" id="tab-9" name="tab-group-3">
+
+        <div class="tab-navs bg-gradient-to-bl from-gray-100 to-white">
+          <label onclick="selectTab(this);" class="tab-nav active" for="tab-7">
+            Pattern based functions and objects
+          </label>
+          <label onclick="selectTab(this);" class="tab-nav" for="tab-8">
+            Declarative logic programming
+          </label>
+          <label onclick="selectTab(this);" class="tab-nav" for="tab-9">
+            Seamless concurrency with actors
+          </label>
+        </div>
+        
+        <div id="content-7" class="tab-content">
+          <div class="window-border">
+            <img src="/static/images/windows.svg" alt="Window border">
+          </div>
+        </div>
+
+        <div id="content-8" class="tab-content">
+          <div class="window-border">
+            <img src="/static/images/windows.svg" alt="Window border">
+          </div>
+          
+        </div>
+
+        <div id="content-9" class="tab-content">
+          <div class="window-border">
+            <img src="/static/images/windows.svg" alt="Window border">
+          </div>
+          
+        </div>
+
+      </section>
+
+    </div>
+
+
+
 
 
       <div class="bg-gradient fg-white">
@@ -203,8 +285,12 @@
 
 
         <script>
-          function selectTab(element) {
-            console.log("Select tab called");
+          // Some old-school style tab selection. The tab-content-switching is setup to work without JS.
+          function selectTab(evt) {
+            let tabs = evt.parentNode.getElementsByClassName("tab-nav");
+            // Disable previously active tab in this group and activate clicked tab.
+            for(var i = 0; i < tabs.length; i++) {  tabs[i].classList.remove("active"); }
+            evt.classList.add("active");
           }
 
         </script>
