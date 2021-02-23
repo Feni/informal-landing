@@ -248,6 +248,14 @@ h1, h2, h3, h4, h5 {
     font-size: 56px;
 }
 
+#lorenz {
+    margin: -100px;
+    width: 600px;
+    height: 400px;
+    margin-top: -128px;
+    max-width: 100%;
+}
+
 
 /* sm */
 @media (max-width: 640px) { 
@@ -273,7 +281,10 @@ h1, h2, h3, h4, h5 {
 
     #lorenz {
         margin: auto;
-        padding: -20px 0;
+        width: 100%;
+        max-width: 100%;
+        display: inline;
+        margin-top: -128px;
     }
 }
 
@@ -294,3 +305,4 @@ h1, h2, h3, h4, h5 {
     background: rgba(255, 255, 255, 0.85);
     z-index: 10;
 }
+
