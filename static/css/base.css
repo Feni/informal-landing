@@ -129,14 +129,14 @@ h1, h2, h3, h4, h5 {
     background-image: url("/static/images/Rieger-Nishimura-concurrency.svg");
     background-repeat: no-repeat;
     background-position: 100% 0%;
-    background-position-x: min(1106px, 100%);
+    background-position-x: min(850px, 100%);
     background-position-y: 82px;
     background-clip: border-box;
 }
 
 .tabs {
     width: 100%;
-    height: 300px;
+    height: 335px;
 }
 
 
@@ -145,13 +145,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .tab-navs {
-    width: 30%;
+    width: 38%;
     display: inline-block;
 }
   
 .tab-nav {
     background-color: inherit;
-    padding: 22px 16px;
+    padding: 1.5rem 2rem;
     width: 100%;
     border: none;
     border-bottom: 1px solid rgba(255, 239, 237, 0.8);
@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5 {
   
   .tab-content {
     padding: 16px;
-    width: 70%;
+    width: 62%;
     border-left: none;
     height: 300px;
     display: none;
@@ -257,6 +257,10 @@ h1, h2, h3, h4, h5 {
  @media (max-width: 768px) { 
     .tab-navs {
         width: 100%;
+    }
+
+    .tab-nav {
+        padding: 1rem 2rem;
     }
 
     .tab-content {
