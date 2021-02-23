@@ -41,11 +41,12 @@
 
       </nav>
     </header>
+
     
     <section class="max-w-6xl relative mx-auto px-4 md:px-16 py-16 md:py-32 md:pb-24">
         <div class="inline-block pt-8 pb-16">
           <!-- text-4xl md:text-5xl lg:text-6xl -->
-            <h1 class="headline inline-block max-w-2xl font-heading font-bold pb-6 fg-red">
+            <h1 class="headline inline-block max-w-3xl font-heading font-bold pb-6 fg-red">
               <!-- A fluid language for your ambitious ideas. -->
               A fluid language to create your ambitious ideas.
             </h1>
@@ -110,11 +111,11 @@
 
       
       
-      <section class="max-w-6xl relative mx-auto px-16 py-32 bg-yellow">
+      <section class="max-w-6xl relative mx-auto px-16 py-16 bg-yellow">
           <h2 class="text-4xl font-heading font-bold">
             Focus on what matters.
           </h2>
-          <p class="text-lg">
+          <p class="text-lg max-w-xl">
             Distill your programs to their essence and solve the problems you care about. Let the language take care of the details.
             Arevel automatically manages your application memory, distributes concurrent tasks across cores, infers type signatures 
             and even solves whole classes of logic and constraint problems for you.
@@ -122,13 +123,19 @@
           </p>
       </section>
 
-
       <!-- 
         JS-free radio-button based tabs. 
         Code-sections were written in a highlighter, and extracted as 
         HTML so we don't need to ship a whole editor for the landing page.
       -->
-      <div class="py-16 pb-32 bg-yellow-white-radial">
+      <div class="bg-yellow-white-radial">
+
+
+        <!-- 
+        Image credit: https://en.wikipedia.org/wiki/File:Rieger-Nishimura.svg
+        CC-3.0. Original by EmilJ.
+        -->
+        <div class="img-rieger py-32 pb-32 ">
         
       <section class="tabs bg-purple shadow-lg md:rounded-r fg-white max-w-6xl">
 
@@ -171,18 +178,29 @@
         </div>
       </section>
 
+      </div>
+
     </div>
       
       
-      <section class="max-w-6xl relative mx-auto px-16 pt-16 pb-32">
+    <div class="max-w-6xl grid grid-cols-2 md:grid-cols-3 gap-4 relative">
+      <canvas class="mx-auto" id="lorenz" width="300" height="300"></canvas>
+    
+      <section class="col-span-2 mx-auto px-16 py-16 evolution-content">
         <h2 class="text-4xl font-heading font-bold fg-purple">Designed to evolve with you.</h2>
         <p class="text-lg">
           From prototype to production, Arevel adapts to the ever-changing requirements of a growing project. 
           Add contractual guarantees to your program with gradual types, isolate complex functionality with independent modules or even transform the language itself with macros.
         </p>
       </section>
+    </div>
       
-      <section class="tabs bg-yellow shadow-lg md:rounded-l max-w-6xl margin-left">
+
+      <div class="py-16">
+        <div class="bg-white shadow-lg md:rounded-l max-w-6xl margin-left">
+        <section class="tabs bg-yellow">
+
+
         <input type="radio" id="tab-4" name="tab-group-2" checked>
         <input type="radio" id="tab-5" name="tab-group-2">
         <input type="radio" id="tab-6" name="tab-group-2">
@@ -220,17 +238,22 @@
           
         </div>
       </section>
+    </div>
+    </div>
+
+    
 
 
 
 
       <div class="bg-fade-out">
-        <section class="max-w-6xl relative mx-auto px-16 pt-32 pb-32 ">
+        <section class="max-w-6xl relative mx-auto px-16 pt-16 pb-32 ">
             <h2 class="text-4xl font-heading font-bold fg-red">
               Let's build it together.
             </h2>
             <p class="text-lg">
-            Software is a collaborative medium. Arevel gives you the tools to create great software together across the internet.
+            Software development is a collaborative process. 
+            Arevel gives you the tools to create great software together across the internet.
             </p>
         </section>
 
@@ -304,7 +327,7 @@
       </div>
 
 
-        <script>
+      <script>
           // Some old-school style class toggling to highlight currently selected tab.
           // The tab-content-switching is setup to work without JS.
           function selectTab(evt) {
@@ -313,8 +336,103 @@
             for(var i = 0; i < tabs.length; i++) {  tabs[i].classList.remove("active"); }
             evt.classList.add("active");
           }
-        </script>
 
+
+          // Lorenz attractor. 
+          // The image version of this is a pathological case for image compression algorithms
+          // and end-up as several hundred KBs no matter the format.
+          // TODO: Port this over to Arevel
+          var x = 0, 
+              y = 10, 
+              z = 10, 
+              dx = 0, 
+              dy = 0, 
+              dz = 0;
+          
+          var A = 10,
+              B = 28, 
+              C = 8/3, 
+              H = 0.004,
+              size = 150;
+
+          var lorenzAnim;
+          var canvas = document.getElementById("lorenz");
+          var ctx = canvas.getContext("2d");
+
+          function lorenzStep(){
+            var dx = H * A * (y - x);
+            var dy = H * (x * (B - z) - y);
+            var dz = H * (x * y - C * z);
+            x += dx; y += dy; z += dz;
+          }
+
+          window.requestAnimFrame = (function(){
+            return  window.requestAnimationFrame       ||
+                    window.webkitRequestAnimationFrame ||
+                    window.mozRequestAnimationFrame    ||
+                    function( callback ){
+                      window.setTimeout(callback, 1000 / 60);
+                    };
+          })();
+
+
+          function randomLorenz() {
+            A = Math.floor(Math.random() * 20);
+            B = Math.floor(Math.random() * 50);
+            C = Math.random() * 5;
+
+          }
+
+          function renderLorenz() {
+            var t = 0;
+            var MAX_FRAMES = 18000;
+
+            lorenzAnim = setInterval(function(){
+              ctx.strokeStyle = "hsl(" + ( (x + y) * 8) % 64 + "," + 96 + "%," +  "75%)";
+              for(var i = 0; i < 20; i++){
+                ctx.beginPath();
+                
+                // ctx.moveTo(z + size + x * 8, z + size + y * 8);
+                ctx.moveTo(size + x * 5, 1.85 * size - z * 5);
+                
+                lorenzStep();
+
+                // ctx.lineTo(z + size + x * 8, z + size + y * 8);
+                ctx.lineTo(size + x * 5, 1.85 * size - z * 5);
+                ctx.stroke();
+
+                t++;
+              }
+
+              if(t > MAX_FRAMES && lorenzAnim !== undefined) {
+                clearInterval(lorenzAnim);
+              }
+            }, 16);
+          }
+
+          var scrollTimer;
+          function scrollWatch() {
+            // Check if they've scrolled far enough down the page before starting the lorenz animation
+            var canvasLoc = canvas.getBoundingClientRect();
+            var scrollHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            if(canvasLoc.top > 0 & canvasLoc.top + 25 <= scrollHeight){
+              clearInterval(scrollTimer);
+              renderLorenz();
+            }
+
+          }
+          scrollTimer = setInterval(scrollWatch, 1000);
+          canvas.addEventListener("click", function(evt){
+            clearInterval(lorenzAnim);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            randomLorenz();
+            renderLorenz();
+          })
+
+          
+
+      </script>
         <!-- Built with <3 by Feni -->
   </body>
 </html>
