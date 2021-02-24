@@ -52,11 +52,10 @@
             </h1>
              <br>
             <h2 class="text-xl md:text-2xl lg:text-3xl  max-w-xl inline-block font-body">
-              Arevel is a high level, pattern-based programming language for web applications and data science.
+              Arevel is a new kind of visual-textual programming language for web applications and data science.
             </h2>
         </div>
     </section>
-
 
     <!-- 
       The symbols here are a reference to the curry-howard-lambek correspondence.
@@ -71,7 +70,7 @@
               
             </div>
             <div class="p-5">
-              <h3 class="text-white text-lg">Declarative</h3>
+              <h3 class="text-white text-lg">Simple</h3>
               <p class="text-gray-400">
                 Adapt to your problem domain with declarative patterns that express logic, functions and objects.
               </p>
@@ -84,7 +83,7 @@
               <h1 class="text-5xl font-body">Δ</h1>
             </div>
             <div class="p-5">
-              <h3 class="text-white text-lg">Powered by WebAssembly</h3>
+              <h3 class="text-white text-lg">Flexible</h3>
               <p class="text-gray-400">
                 Interactively develop in the browser and compile to efficient, safe WASM you can run anywhere.
               </p>
@@ -99,7 +98,7 @@
             </div>
             <div class="p-5">
               <h3 class="text-white text-lg">
-                Gradually Typed
+                Safe
                 </h3>
               <p class="text-gray-400">
                 Prototype quickly and gradually add expressive type constraints as your codebase evolves.
@@ -113,7 +112,7 @@
       
       <section class="max-w-6xl relative mx-auto px-16 py-16 bg-yellow">
           <h2 class="text-4xl font-heading font-bold">
-            Focus on what matters.
+            The best of all worlds.
           </h2>
           <p class="text-lg max-w-xl">
             Distill your programs to their essence and solve the problems you care about. Let the language take care of the details.
@@ -145,13 +144,13 @@
 
         <div class="tab-navs bg-gradient-to-bl from-purple-900 via-pink-800 to-red-500">
           <label onclick="selectTab(this);" class="tab-nav active" for="tab-1">
-            Pattern based functions and objects
+            Code you can interact with.
           </label>
           <label onclick="selectTab(this);" class="tab-nav" for="tab-2">
-            Declarative logic programming
+            It's patterns all the way down.
           </label>
           <label onclick="selectTab(this);" class="tab-nav" for="tab-3">
-            Seamless concurrency with actors
+            Just say what you need.
           </label>
         </div>
 
@@ -207,13 +206,13 @@
 
         <div class="tab-navs bg-gradient-to-br from-red-300 via-orange-200 to-yellow-200 ">
           <label onclick="selectTab(this);" class="tab-nav active" for="tab-4">
-            Robust code with dependent types
+            Quick prototype to production ready.
           </label>
           <label onclick="selectTab(this);" class="tab-nav" for="tab-5">
-            Adaptable first-class modules
+            Scale across the cores. Seamlessly.
           </label>
           <label onclick="selectTab(this);" class="tab-nav" for="tab-6">
-            Extensible syntax with macros
+            Extensible at every layer by anybody.
           </label>
         </div>
 
@@ -257,28 +256,22 @@
             </p>
         </section>
 
-
-
-
-
         <div class="max-w-4xl mx-auto rounded-lg shadow-lg">
-
-  
+          
           <section class="tabs bg-white">
-  
             <input type="radio" id="tab-7" name="tab-group-3" checked>
             <input type="radio" id="tab-8" name="tab-group-3">
             <input type="radio" id="tab-9" name="tab-group-3">
   
             <div class="tab-navs bg-gradient-to-bl from-gray-100 to-white">
               <label onclick="selectTab(this);" class="tab-nav active" for="tab-7">
-                Collaborative editor
+                Now we're coding.
               </label>
               <label onclick="selectTab(this);" class="tab-nav" for="tab-8">
-                Capabilities based library safety
+                Libraries without the nightmares.
               </label>
               <label onclick="selectTab(this);" class="tab-nav" for="tab-9">
-                Augmented development tools
+                Integrate with anything.
               </label>
             </div>
             
@@ -321,7 +314,7 @@
               Build. Launch. Grow.
             </h2>
             <p class="text-lg">
-            
+              
             </p>
         </section>
       </div>
@@ -353,6 +346,7 @@
           // A: 18 B 29 C 6.070134050509346
           // A: 19 B 38 C 8.769096639124001
           // A: 14 B 29 C 2.812496067011794
+          // A: 16 B 25 C 4.634000666150972
           var A = 10,  // Horizontal shear
               B = 28,  // Vertical size
               C = 8/3, // Spacing
@@ -388,7 +382,8 @@
           }
 
           function renderLorenz() {
-            ctx.strokeStyle = "hsl(" + ( (x + y) * 8) % 64 + "," + 96 + "%," +  "75%)";
+            ctx.strokeStyle = "hsl(" + ( (x + y) * 8) % 64 + "," + 96 + "%," +  "60%)";
+            ctx.lineWidth = 2;
             for(var i = 0; i < 20; i++){
               ctx.beginPath();
               

@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5 {
   
 .tab-nav {
     background-color: inherit;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1.5rem;
     width: 100%;
     border: none;
     border-bottom: 1px solid rgba(255, 239, 237, 0.8);
@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5 {
     }
 
     .tab-nav {
-        padding: 1rem 2rem;
+        padding: 1rem 1.5rem;
     }
 
     .tab-content {
