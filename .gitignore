@@ -5,3 +5,4 @@ avs/pkg/*
 avs/*.wat
 site/static/node_modules/*
 dist/
+node_modules/
