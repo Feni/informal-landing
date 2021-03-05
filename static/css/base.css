@@ -4,6 +4,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;    
     color: rgb(36, 41, 46);
+    background: white;
 }
 
 * {box-sizing: border-box}
@@ -173,9 +174,9 @@ h1, h2, h3, h4, h5 {
   
   .tab-content {
     padding: 16px;
+    padding-right: 0;
     width: 62%;
     border-left: none;
-    height: 300px;
     display: none;
   }
 
@@ -256,9 +257,94 @@ h1, h2, h3, h4, h5 {
     max-width: 100%;
 }
 
+.bg-purple {
+    --syntax-text: #434447;
+    --syntax-background: rgba 0,0,100,0.75;
+    --syntax-string: #886594;
+    --syntax-comment: #8C828B;
+    --syntax-variable: #F8518D;
+    --syntax-variable-2: #BF3F6D;
+    --syntax-variable-3: #238600;
+    --syntax-number: #24805E;
+    --syntax-atom: #24805E;
+    --syntax-keyword: #496EB8;
+    --syntax-property: #0B7880;
+    --syntax-definition: #C44170;
+    --syntax-meta: #625B6B;
+    --syntax-operator: #496EB8;
+    --syntax-attribute: #C44170;
+    --syntax-tag: #4B71BD;
+
+
+    --syntax-keyword: rgb(255, 238, 128);
+    --syntax-definition: rgb(255, 255, 255);
+    --syntax-variable: rgb(158, 255, 255);
+    --syntax-string: rgb(255, 184, 112);
+    --syntax-builtin: rgb(143, 193, 62);
+    --syntax-comment: rgb(92, 152, 205);
+
+}
+
+.cm-keyword {
+    color: var(--syntax-keyword) !important;
+}
+
+.cm-def {
+    color: var(--syntax-definition) !important;
+}
+
+.cm-variable {
+    color: var(--syntax-variable) !important;
+}
+
+.cm-number {
+    color: var(--syntax-number) !important;
+}
+
+.cm-operator {
+    color: var(--syntax-operator) !important;
+}
+
+.cm-builtin {
+    color: var(--syntax-builtin) !important;
+}
+
+.cm-string, .cm-string-2 {
+    color: var(--syntax-string) !important;
+}
+
+.cm-comment {
+    color: var(--syntax-comment) !important;
+}
+
+
+.CodeMirror-code {
+    overflow-y: auto;
+    height: 284px;
+}
+
+.greeting-table {
+    margin-left: 1.5rem;
+}
+
+.greeting-table, .greeting-table th, .greeting-table tr, .greeting-table td {
+    border: 1px solid #FF5959;
+    padding: .25rem .5rem;
+}
+
+.greeting-table thead {
+    background-color: rgba(151, 38, 109, 0.5)
+}
+
+.greeting-table tbody tr td:first-child {
+    background-color: rgba(151, 38, 109, 0.5)
+}
 
 /* sm */
 @media (max-width: 640px) { 
+    .tabs {
+        height: 493px;
+    }
 }
 
  /* md */
