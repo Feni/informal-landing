@@ -21,7 +21,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet">
 
   <link href="static/css/base.css" rel="stylesheet">
-  <link href="static/css/landing.css" rel="stylesheet">
 
 </head>
 
@@ -114,8 +113,9 @@
       Create it any way you choose.
     </h2>
     <p class="text-lg max-w-xl">
-      Visual or textual. Functional or object oriented. Fully dynamic or type checked. 
-      Informal is distilled from concepts proven in languages like Python, Haskell, Smalltalk, Prolog, Elixir, APL and Clojure.
+      Visual or textual. Functional or object oriented. Fully dynamic or type checked.
+      Informal is distilled from concepts proven in languages like Python, Haskell, Smalltalk, Prolog, Elixir, APL and
+      Clojure.
       Choose the style that's right for your project, so you can focus on the problems that really matter.
     </p>
   </section>
@@ -132,7 +132,7 @@
         -->
     <div class="img-rieger py-32 pb-32 ">
 
-      <section class="tabs bg-purple shadow-lg md:rounded-r fg-white max-w-4xl">
+      <section class="tabs bg-purple shadow-lg md:rounded-r fg-white max-w-6xl">
 
         <input type="radio" id="tab-1" name="tab-group-1" checked>
         <input type="radio" id="tab-2" name="tab-group-1">
@@ -155,46 +155,68 @@
             <img src="static/images/windows.svg" alt="Window border">
           </div>
 
-          <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-comment">// Experience live coding that instantly reacts to your changes</span></span></pre>
+          <pre class=" CodeMirror-line "
+            role="presentation"><span role="presentation"><span class="cm-comment">// Experience live coding that instantly reacts to your changes</span></span></pre>
 
-          <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword text-sm">fn</span> <span class="cm-def font-bold text-xl">greeting</span>(<span class="cm-variable">locale</span>)</span><span class="text-gray-500 float-right">String            </span></pre>
+          <pre class=" CodeMirror-line "
+            role="presentation"><span class="cm-def font-bold text-xl">greeting </span><span role="presentation"></span> </pre>
 
-          <table class="greeting-table">
-            <thead>
-              <tr>
-                <th></th>
-                <th><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">isMorning</span>(<span class="cm-variable">now</span>())</span></pre></td></th>
-                <!-- <th><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">isEvening</span>(<span class="cm-variable">now</span>())</span></pre></th> -->
-                <th><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">else</span></span></pre></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">locale</span> <span class="cm-operator">==</span> <span class="cm-string">"en-US"</span></span></pre>
+          <div class="grid grid-cols-6">
+            <div class="Signature col-span-1 flex">
 
-                <td>
-                  <pre class=" CodeMirror-line "><span><span class="cm-string">"Good Morning!"</span></span></pre>
-                </td>
+              <span class="cm-variable">locale</span><br>
+              <span class="text-gray-500 float-right" style="display: flex; align-items: flex-end;">String</span>
 
-                <td>
-                  <pre class=" CodeMirror-line "><span><span class="cm-string">"Hello!"</span></span></pre>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">locale</span> <span class="cm-operator">==</span> <span class="cm-string">"ml-IN"</span></span></pre>
-                </td>
-                <td>
-                  <pre class=" CodeMirror-line "><span><span class="cm-string">"സുപ്രഭാതം"</span></span></pre>
-                </td>
 
-                <td>
-                  <pre class=" CodeMirror-line "><span><span class="cm-string">"നമസ്കാരം"</span></span></pre>
-                </td>
+            </div>
 
-              </tr>
-              <!-- <tr>
+            <div class="Body col-span-4">
+
+              <table class="greeting-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>
+                      <pre class=" CodeMirror-line "
+                        role="presentation"><span role="presentation"><span class="cm-variable">isMorning</span>(<span class="cm-variable">now</span>())</span></pre>
+                      </td>
+                    </th>
+                    <!-- <th><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">isEvening</span>(<span class="cm-variable">now</span>())</span></pre></th> -->
+                    <th>
+                      <pre class=" CodeMirror-line "
+                        role="presentation"><span role="presentation"><span class="cm-keyword">else</span></span></pre>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <pre class=" CodeMirror-line "
+                        role="presentation"><span role="presentation"><span class="cm-variable">locale</span> <span class="cm-operator">==</span> <span class="cm-string">"en-US"</span></span></pre>
+
+                    <td>
+                      <pre class=" CodeMirror-line "><span><span class="cm-string">"Good Morning!"</span></span></pre>
+                    </td>
+
+                    <td>
+                      <pre class=" CodeMirror-line "><span><span class="cm-string">"Hello!"</span></span></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <pre class=" CodeMirror-line "
+                        role="presentation"><span role="presentation"><span class="cm-variable">locale</span> <span class="cm-operator">==</span> <span class="cm-string">"ml-IN"</span></span></pre>
+                    </td>
+                    <td>
+                      <pre class=" CodeMirror-line "><span><span class="cm-string">"സുപ്രഭാതം"</span></span></pre>
+                    </td>
+
+                    <td>
+                      <pre class=" CodeMirror-line "><span><span class="cm-string">"നമസ്കാരം"</span></span></pre>
+                    </td>
+
+                  </tr>
+                  <!-- <tr>
                 <td></td>
                 <td>
                   
@@ -203,8 +225,12 @@
                   
                 </td>
               </tr> -->
-            </tbody>
-            </table>          
+                </tbody>
+              </table>
+
+            </div>
+
+          </div>
 
         </div>
 
@@ -216,7 +242,7 @@
           <div class="CodeMirror-code" role="presentation" style="">
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-comment">// Declaratively order exactly $15.05 worth of appetizers</span></span></pre>
-          
+
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-variable">appetizers</span>:</span></pre>
             <pre class=" CodeMirror-line "
@@ -231,27 +257,31 @@
               role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-string">"Mozarella Sticks"</span>: <span class="cm-number">4.20</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-string">"Sampler Plate"</span>: <span class="cm-number">5.80</span></span></pre>
-            <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-variable">Order</span>: <span class="cm-variable">String</span> <span class="cm-keyword">in</span> <span class="cm-variable">appetizers</span></span></pre>
-            <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-keyword">fn</span> <span class="cm-def">total</span>(<span class="cm-variable">orders</span>: [<span class="cm-variable">Order</span>, <span class="cm-number">1</span>..<span class="cm-number">8</span>]): <span class="cm-variable">sum</span>(<span class="cm-variable">appetizers</span>[<span class="cm-variable">order</span>.<span class="cm-variable">item</span>])</span></pre>
-            <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-comment">// We'd like exactly $15.05 worth of appetizers please...</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-variable">print</span> <span class="cm-variable">order</span> <span class="cm-keyword">where</span> <span class="cm-variable">total</span>(<span class="cm-variable">order</span>) <span class="cm-operator">==</span> <span class="cm-number">15.05</span></span></pre>
-            <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-comment">// In fact, give me all of those orders</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-keyword">for</span> <span class="cm-variable">order</span> <span class="cm-keyword">in</span> <span class="cm-variable">orders</span> <span class="cm-keyword">where</span> <span class="cm-variable">total</span>(<span class="cm-variable">orders</span>) <span class="cm-operator">==</span> <span class="cm-number">15.05</span>:</span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-variable">print</span> <span class="cm-variable">order</span></span></pre>
-          </div>          
+          </div>
 
-        
+
         </div>
 
         <div id="content-3" class="tab-content">
@@ -265,8 +295,8 @@
 
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-comment">// Define the pattern for a valid Date</span></span></pre>
-          
-          
+
+
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-variable">daysPerMonth</span>:</span></pre>
             <pre class=" CodeMirror-line "
@@ -293,15 +323,18 @@
               role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-string">"November"</span>: <span class="cm-number">30</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-string">"December"</span>: <span class="cm-number">31</span></span></pre>
-            <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
-          
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-keyword">type</span> <span class="cm-def">Year</span>: <span class="cm-variable">Integer</span> <span class="cm-keyword">in</span> [<span class="cm-number">1901</span>..<span class="cm-number">2038</span>]</span></pre>
-            <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
-          
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-keyword">fn</span> <span class="cm-def">isLeapYear</span>(<span class="cm-variable">year</span>: <span class="cm-variable">Year</span>): <span class="cm-variable">year</span> % <span class="cm-number">4</span> <span class="cm-operator">==</span> <span class="cm-number">0</span> </span></pre>
-            <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-comment">// Functions can match on patterns</span></span></pre>
             <pre class=" CodeMirror-line "
@@ -310,12 +343,13 @@
               role="presentation"><span role="presentation"><span class="cm-keyword">fn</span> <span class="cm-def">dateRange</span>(<span class="cm-string">"February"</span>, <span class="cm-variable">year</span>): <span class="cm-number">28</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-keyword">fn</span> <span class="cm-def">dateRange</span>(<span class="cm-variable">month</span>, <span class="cm-variable">_</span>): <span class="cm-variable">daysPerMonth</span>[<span class="cm-variable">month</span>]</span></pre>
-            <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
-          
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-comment">// Types define the pattern for structure</span></span></pre>
-          
-          
+
+
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"><span class="cm-keyword">type</span> <span class="cm-def">Date</span>:</span></pre>
             <pre class=" CodeMirror-line "
@@ -324,10 +358,11 @@
               role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-variable">month</span>: <span class="cm-variable">String</span> <span class="cm-keyword">in</span> <span class="cm-variable">daysPerMonth</span></span></pre>
             <pre class=" CodeMirror-line "
               role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-variable">day</span>: <span class="cm-variable">Integer</span> <span class="cm-keyword">in</span> [<span class="cm-number">1</span>..<span class="cm-variable">dateRange</span>(<span class="cm-variable">month</span>, <span class="cm-variable">year</span>)]</span></pre>
-          
-            <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
           </div>
-          
+
 
 
 
@@ -355,7 +390,7 @@
 
 
   <div class="py-16">
-    <div class="shadow-lg md:rounded-l max-w-4xl margin-left">
+    <div class="shadow-lg md:rounded-l max-w-6xl margin-left">
       <section class="tabs bg-yellow">
 
 
@@ -383,28 +418,28 @@
 
           <div>
 
-            <!-- <div class="Cell" id="Cell_XP2NVY8Mu3z6bZJ6jHB84A" tabindex="0" data-cell="XP2NVY8Mu3z6bZJ6jHB84A">
-                <div class="grid grid-cols-3">
-                  <div class="Cell-cellName col-sm-2"><a class="name inline-block">name</a></div>
-                  <div></div>
-                  <div></div>
-                </div>
+            <div class="CodeMirror-code" role="presentation" style="">
+              <pre class=" CodeMirror-line "
+                role="presentation"><span role="presentation"><span class="cm-keyword">fn</span> <span class="cm-def">simpleDifference</span>(<span class="cm-variable">start</span>, <span class="cm-variable">end</span>): <span class="cm-variable">end</span> <span class="cm-operator">-</span> <span class="cm-variable">start</span></span></pre>
+              <pre class=" CodeMirror-line "
+                role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+              <pre class=" CodeMirror-line "
+                role="presentation"><span role="presentation"><span class="cm-comment">// The return type can be inferred</span></span></pre>
+              <pre class=" CodeMirror-line "
+                role="presentation"><span role="presentation"><span class="cm-keyword">fn</span> <span class="cm-def">typedDifference</span>(<span class="cm-variable">start</span>: <span class="cm-variable">Integer</span>, <span class="cm-variable">end</span>: <span class="cm-variable">Integer</span>): <span class="cm-variable">end</span> <span class="cm-operator">-</span> <span class="cm-variable">start</span></span></pre>
+              <pre class=" CodeMirror-line "
+                role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+              <pre class=" CodeMirror-line "
+                role="presentation"><span role="presentation"><span class="cm-comment">// Enforce constraints with types</span></span></pre>
+              <pre class=" CodeMirror-line "
+                role="presentation"><span role="presentation"><span class="cm-keyword">fn</span> <span class="cm-def">safeDifference</span>(<span class="cm-variable">start</span>: <span class="cm-variable">Positive</span> <span class="cm-variable">Integer</span>, <span class="cm-variable">end</span>: <span class="cm-variable">Integer</span> <span class="cm-variable">and</span> <span class="cm-variable">start</span> <span class="cm-operator">&lt;</span> <span class="cm-variable">end</span>) <span class="cm-variable">Positive</span> <span class="cm-variable">Integer</span> : </span></pre>
+              <pre class=" CodeMirror-line "
+                role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-variable">end</span> <span class="cm-operator">-</span> <span class="cm-variable">start</span></span></pre>
+            </div>
 
-                <div class="grid grid-cols-5">
 
-                <div class="col-span-3 Cell-cellResults">
-                  <div class="Cell-cellValue"><span class="token string">"World"</span></div>
-                </div>
-                <div class="col-span-2 text-right">
-                  <p class="docs">Click to edit this cell and set the name variable to your name.</p>
-                </div>
-
-                </div>
-              </div> -->
-            
-            
           </div>
-            
+
 
         </div>
 
@@ -413,12 +448,98 @@
             <img src="static/images/windows.svg" alt="Window border">
           </div>
 
+
+          <div class="CodeMirror-code" role="presentation" style="">
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span class="cm-comment">// A concurrent file line counter by file type</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span class="cm-keyword">class</span> <span class="cm-variable">LineCounter</span>:</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-variable">LineCounter</span>(<span class="cm-variable">counter</span><span class="cm-operator">=</span><span class="cm-number">0</span>)</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-keyword">fn</span> <span class="cm-def">process</span>(<span class="cm-variable">contents</span>: <span class="cm-variable">String</span>):</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">counter</span> <span class="cm-operator">+=</span> <span class="cm-variable">contents</span>.<span class="cm-variable">lines</span>().<span class="cm-variable">length</span>()</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-keyword">fn</span> <span class="cm-def">report</span>(<span class="cm-variable">fileType</span>: <span class="cm-variable">String</span>): <span class="cm-variable">print</span> <span class="cm-string">"$fileType : $count"</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-keyword">fn</span> <span class="cm-def">report</span>(<span class="cm-variable">default</span>): <span class="cm-variable">print</span> <span class="cm-string">"Other : $count"</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span class="cm-variable">counters</span>:</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-string">"html"</span>: <span class="cm-variable">new</span> <span class="cm-variable">LineCounter</span>()</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-string">"js"</span>: <span class="cm-variable">new</span> <span class="cm-variable">LineCounter</span>()</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-variable">default</span>: <span class="cm-variable">new</span> <span class="cm-variable">LineCounter</span>()</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span class="cm-keyword">for</span> <span class="cm-variable">file</span> <span class="cm-keyword">in</span> <span class="cm-variable">Directory</span>(<span class="cm-string">"."</span>):</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-variable">_</span>, <span class="cm-variable">filetype</span> <span class="cm-operator">=</span> <span class="cm-variable">file</span>.<span class="cm-variable">extension</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-comment">// Send a concurrent message (&lt;-) to process the file.</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-variable">counters</span>[<span class="cm-variable">filetype</span>]<span class="cm-operator">&lt;-</span><span class="cm-variable">process</span>(<span class="cm-variable">file</span>.<span class="cm-variable">read</span>())</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span class="cm-keyword">for</span> <span class="cm-variable">fileType</span>, <span class="cm-variable">counter</span> <span class="cm-keyword">in</span> <span class="cm-variable">counters</span>:</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-variable">counter</span><span class="cm-operator">&lt;-</span><span class="cm-variable">report</span>(<span class="cm-variable">fileType</span>)</span></pre>
+            <pre class=" CodeMirror-line "
+              role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+          </div>
+
+
         </div>
 
         <div id="content-6" class="tab-content">
           <div class="window-border">
             <img src="static/images/windows.svg" alt="Window border">
           </div>
+
+
+<div class="CodeMirror-code" role="presentation" style="">
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"><span class="cm-comment">// From syntax, to compiler, to the editor...</span></span></pre>
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"><span class="cm-comment">// Every layer of the language is extensible.</span></span></pre>
+
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"><span class="cm-keyword">class</span> <span class="cm-def">Article</span>:</span></pre>
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-variable">Article</span>(<span class="cm-variable">title</span>: <span class="cm-variable">String</span>, <span class="cm-variable">author</span>: <span class="cm-variable">String</span>)</span></pre>
+  <pre class=" CodeMirror-line " role="presentation"><span role="presentation"> &nbsp; &nbsp;</span></pre>
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"> &nbsp; &nbsp;<span class="cm-keyword">fn</span> <span class="cm-def">render</span>():</span></pre>
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// An embedded HTML syntax block.</span></span></pre>
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">#html</span>:</span></pre>
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>${ <span class="cm-variable">title</span> }<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span> by <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>${ <span class="cm-variable">author</span> }<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+  <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"><span class="cm-variable">a</span> <span class="cm-operator">=</span> <span class="cm-variable">Article</span>(<span class="cm-variable">title</span><span class="cm-operator">=</span><span class="cm-string">"On &lt;blink&gt;Escaping&lt;/blink&gt;"</span>, <span class="cm-variable">author</span><span class="cm-operator">=</span><span class="cm-string">"R Morris"</span>)</span></pre>
+  <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"><span class="cm-variable">print</span> <span class="cm-variable">a</span>.<span class="cm-property">render</span>()</span></pre>
+
+    <pre class=" CodeMirror-line "
+    role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre>
+
+</div>
 
         </div>
       </section>
@@ -461,18 +582,32 @@
           <div class="window-border">
             <img src="static/images/windows.svg" alt="Window border">
           </div>
+          <br>
+          <div>Code in the browser in a real-time, responsive environment. 
+            No setup required.
+          </div>
         </div>
 
         <div id="content-8" class="tab-content">
           <div class="window-border">
             <img src="static/images/windows.svg" alt="Window border">
           </div>
+          <br>
 
+          <div>
+            Libraries in Informal are sandboxed by default. <br>They can't access your network, filesystem or any resource unless you grant them those capabilities.
+          </div>
         </div>
 
         <div id="content-9" class="tab-content">
           <div class="window-border">
             <img src="static/images/windows.svg" alt="Window border">
+          </div>
+
+          <div>
+            Informal compiles to the lightweight, efficient WebAssembly bytecode format. 
+            You can run it in the browser, on your servers, or even embed it in other applications.
+            Use WebAssembly's built-in foreign-function interface to interact with code across languages.
           </div>
 
         </div>
@@ -516,7 +651,7 @@
     // Lorenz attractor. 
     // The image version of this is a pathological case for image compression algorithms
     // and end-up as several hundred KBs no matter the format.
-    // TODO: Port this over to Arevel
+    // TODO: Port this over to Informal
     var x = 0,
       y = 10,
       z = 10,

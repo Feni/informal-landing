@@ -285,6 +285,28 @@ h1, h2, h3, h4, h5 {
 
 }
 
+
+
+.bg-yellow {
+    --syntax-text: #434447;
+    --syntax-background: rgba 0,0,100,0.75;
+    --syntax-string: #886594;
+    --syntax-comment: #8C828B;
+    --syntax-variable: #F8518D;
+    --syntax-variable-2: #BF3F6D;
+    --syntax-variable-3: #238600;
+    --syntax-number: #24805E;
+    --syntax-atom: #24805E;
+    --syntax-keyword: #496EB8;
+    --syntax-property: #0B7880;
+    --syntax-definition: #C44170;
+    --syntax-meta: #625B6B;
+    --syntax-operator: #496EB8;
+    --syntax-attribute: #C44170;
+    --syntax-tag: #4B71BD;
+
+}
+
 .cm-keyword {
     color: var(--syntax-keyword) !important;
 }
