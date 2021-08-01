@@ -139,6 +139,27 @@ h1, h2, h3, h4, h5 {
     background-clip: border-box;
 }
 
+.btn {
+    transition: background-color .125s linear;
+    font-size: 1.125rem;
+    --text-opacity: 1;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);    
+    margin-right: 15px;
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    color: #fff;
+    color: rgba(255,255,255,var(--text-opacity));
+}
+
+.btn-secondary {
+    background-color: #D1D5DB;
+}
+
 .tabs {
     width: 100%;
     height: 335px;
@@ -417,4 +438,3 @@ h1, h2, h3, h4, h5 {
     background: rgba(255, 255, 255, 0.85);
     z-index: 10;
 }
-
